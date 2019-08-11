@@ -1,0 +1,11 @@
+.top-navigation-menu-layout {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 10px 10px 10px;
+}
+
+.top-navigation-menu-hr{
+  border-color: rgba(226, 226, 226, 0.507)
+}

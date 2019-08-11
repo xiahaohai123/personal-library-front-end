@@ -1,0 +1,62 @@
+{
+  "presets": [
+    [
+      "env",
+      {
+        "modules": false,
+        "targets": {
+          "browsers": [
+            "> 1%",
+            "last 2 versions",
+            "not ie <= 8"
+          ]
+        }
+      }
+    ],
+    [
+      "es2015",
+      {
+        "modules": false
+      }
+    ],
+    "stage-2"
+  ],
+  "plugins": [
+    "transform-vue-jsx",
+    "transform-runtime"
+    // element-ui按需引入插件
+    // [
+    //   "component",
+    //   {
+    //     "libraryName": "element-ui",
+    //     "styleLibraryName": "theme-chalk"
+    //   }
+    // ]
+  ],
+  "env": {
+    "test": {
+      "presets": [
+        "env",
+        "stage-2"
+      ],
+      "plugins": [
+        "transform-vue-jsx",
+        "transform-es2015-modules-commonjs",
+        "dynamic-import-node"
+      ]
+    }
+  }
+}
+//来自element官网
+// {
+//   "presets": [["es2015", { "modules": false }]],
+//   "plugins": [
+//     [
+//       "component",
+//       {
+//         "libraryName": "element-ui",
+//         "styleLibraryName": "theme-chalk"
+//       }
+//     ]
+//   ]
+// }

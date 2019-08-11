@@ -1,0 +1,17 @@
+.login-register-dialog {
+  min-width: 300px;
+}
+
+.login-register-dialog-input {
+  margin-top: 0.5vh;
+  margin-bottom: 0.5vh;
+}
+
+.login-register-dialog-button {
+  margin-top: 0.5vh !important;
+}
+
+.login-register-dialog-tab-panel {
+  display: flex;
+  flex-direction: column;
+}
